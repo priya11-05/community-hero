@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-primary: #0A74DA;
+  --color-brand-secondary: #1E88E5;
+  --color-brand-accent: #F6B93B;
+  --color-brand-light: #F7FAFC;
+  --color-brand-success: #34C759;
+  --color-brand-danger: #FF4D4F;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F7FAFC] text-gray-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-800;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Curved separating sections */
+.wave-container {
+  position: relative;
+  background: #0A74DA;
+  color: white;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 60px;
+}
+
+.wave-bottom .shape-fill {
+  fill: #F7FAFC;
+}

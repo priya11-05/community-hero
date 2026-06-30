@@ -1,0 +1,6 @@
+{
+  "name": "Community Hero",
+  "description": "AI-Powered Hyperlocal Civic Issue Reporting & Resolution Platform connecting citizens, volunteers, municipal officers, and field workers.",
+  "requestFramePermissions": ["geolocation", "camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
